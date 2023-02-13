@@ -5,7 +5,8 @@ const body = document.querySelector('body');
 const span = body.querySelector('.color');
 const btnChangeColor = body.querySelector('.change-color');
 const onBtnChangeColor = () => {
-    const bgColor = (body.style.backgroundColor = getRandomHexColor());
+    const bgColor = getRandomHexColor();
+    body.style.backgroundColor = bgColor;
     span.textContent = bgColor;
 };
 

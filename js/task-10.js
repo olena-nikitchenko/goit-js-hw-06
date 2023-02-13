@@ -23,7 +23,7 @@ const createBoxes = () => {
 };
 
 const destroyBoxes = () => {
-    divBoxes.remove('div');
+    divBoxes.innerHTML = '';
     input.value = '';
 };
 btnCreate.addEventListener('click', createBoxes);
